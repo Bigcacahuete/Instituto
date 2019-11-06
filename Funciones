@@ -1,0 +1,93 @@
+#include <stdio.h>
+int suma(int A, int B);
+int resta(int A, int B);
+int multi(int A, int B);
+int par(int A);
+int main()
+{   int a=0;
+    int b=0;
+    int c=0;
+    int op;
+    int patata=0;
+       printf("Elija el numero de operaciones: \n");
+            scanf("%d", &patata);
+    do{
+        printf("Elija una operacion: \n");
+            scanf("%d", &op);
+   switch(op)
+{
+    case 1 : printf("Suma. \n");
+    break;
+    case 2 : printf("Resta. \n");
+    break;
+    case 3 : printf("Multiplicacion. \n");
+    break;
+    case 4 : printf("Par. \n");
+    break;
+}
+    if(op==1)
+{
+    c=suma(a,b);
+        printf("El resultado es: %d \n", c);
+}
+    if(op==2)
+{
+    c=resta(a,b);
+        printf("El resultado es: %d \n", c);
+}
+    if(op==3)
+{
+    c=multi(a,b);
+        printf("El resultado es: %d \n", c);
+}
+    if(op==4)
+{
+    par(a);
+}
+patata--;
+} while (patata!=0);
+    
+    return 0;
+}
+int suma(int A, int B)
+{  
+        printf("Introduzca el primer numero: \n");
+            scanf("%d", &A);
+        printf("Introduzca el segundo numero: \n");
+            scanf("%d", &B);
+   int resultado;
+   resultado=A+B;
+   return resultado;
+}
+int resta(int A, int B)
+{
+        printf("Introduzca el primer numero: \n");
+            scanf("%d", &A);
+        printf("Introduzca el segundo numero: \n");
+            scanf("%d", &B);
+   int resultado;
+   resultado=A-B;
+   return resultado;
+}
+int multi(int A, int B)
+{
+        printf("Introduzca el primer numero: \n");
+            scanf("%d", &A);
+        printf("Introduzca el segundo numero: \n");
+            scanf("%d", &B);
+    int resultado;
+    resultado=A*B;
+    return resultado;
+}
+int par(int A)
+{
+        printf("Introduzca el numero: \n");
+            scanf("%d", &A);
+    if(A%2==0)
+        printf("El numero es par. \n");
+    else
+        printf("El numero es impar. \n");
+    
+    return 0;
+}
+
