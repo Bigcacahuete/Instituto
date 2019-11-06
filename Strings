@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+void main()
+{
+    char nombre[]="Gandalf";
+    int caracter=0;
+    
+    printf("Texto: %s \n", nombre);
+    
+    for(int caracter = 0; caracter </0;)
+    
+    printf("El tamaño de la cadena es: ")
+    
+}
+
